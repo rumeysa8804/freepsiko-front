@@ -1,0 +1,16 @@
+.navbar_button {
+  margin-left: 10px;
+  background-color: #e23072;
+  text-transform: uppercase;
+  color: white;
+  padding: 6px 25px;
+  font-weight: bolder;
+  font-family: "Roboto", sans-serif;
+  border: 0;
+}
+.navbar_container {
+  font-family: "Roboto", sans-serif;
+}
+.navbar_navlink {
+  font-family: "Roboto", sans-serif;
+}

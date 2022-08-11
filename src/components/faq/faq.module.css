@@ -1,0 +1,74 @@
+.faq_container {
+  margin: 50px 0 50px 0;
+}
+.faq_container_2{
+  width: 70%;
+  margin: auto;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 10px;
+  
+  border-radius: 20px;
+  color: white;
+  
+
+}
+.faq_title_container{
+  width: 100%;
+  display: flex;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+.faq_title{
+  font-size: 30px;
+  /* background-image: linear-gradient(to right, #3E39D1, #EC75DC); */
+  /* color: transparent; */
+  text-transform: uppercase;
+color: black;
+margin: auto;
+letter-spacing: 4px;
+}
+
+.faq_item {
+  font-family: "Roboto", sans-serif;
+  /* background-color: crimson; */
+  border-radius: 20px;
+  color: white;
+  background-color: #1c1c1c;
+
+  padding: 25px 20px 16px 20px;
+margin-bottom: 15px;
+box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+}
+.faq_header {
+  font-family: "Roboto", sans-serif;
+  border-radius: 20px;
+  /* background-color: crimson; */
+  background-color: #1c1c1c;
+  border: 0;
+  /* import add_button from '../../img/faq_add_button' */
+
+}
+.faq_box {
+  font-family: "Roboto", sans-serif;
+  color: white;
+border: 0;
+font-size: 18px;
+font-weight: 100;
+}
+
+.faq_body {
+  border-radius: 20px;
+  /* background-color: crimson; */
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+
+}
+.faq_icon{
+  color: rgb(255, 255, 255);
+  width: 20px;
+  font-weight: 100;
+}
+
