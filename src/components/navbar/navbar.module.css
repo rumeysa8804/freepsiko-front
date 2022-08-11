@@ -11,6 +11,15 @@
 .navbar_container {
   font-family: "Roboto", sans-serif;
 }
+.navbar_link{
+  text-decoration: none;
+}
 .navbar_navlink {
   font-family: "Roboto", sans-serif;
+  text-decoration: dashed;
+  color: rgb(0, 0, 0);
+  padding: 0 10px;
+}
+.navbar_logo_img{
+  width: 50px;
 }

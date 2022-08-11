@@ -1,20 +1,22 @@
 // import { Stack } from 'react-bootstrap';
-import Button from 'react-bootstrap/Button';
-import Stack from 'react-bootstrap/Stack';
-import styles from "../home/home.module.css"
-import 'bootstrap/dist/css/bootstrap.min.css';
+import Button from "react-bootstrap/Button";
+import Stack from "react-bootstrap/Stack";
+import styles from "../home/home.module.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import { Pink } from "../pink/pink";
+import Section4 from "../section4/section4";
+import Section5 from "../section5/section5";
+import { Faq } from "../faq/faq";
+import { Footer } from "../footer/footer";
 
 export function Home() {
   return (
     <>
-      <Stack direction="horizontal" gap={2}>
-      <Button as="a" variant="primary">
-    Button as link
-  </Button>
-  <Button as="a" variant="success">
-    Button as link
-  </Button>
-</Stack>
+      <Pink />
+      <Section4 />
+      <Section5 />
+      <Faq />
+      <Footer />
     </>
   );
 }
