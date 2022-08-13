@@ -1,5 +1,7 @@
-import { createTheme } from '@mui/material/styles';
-export const theme = createTheme({
+import { extendTheme } from "@chakra-ui/react"
+
+// 2. Call `extendTheme` and pass your custom values
+const theme = extendTheme({
   palette: {
     blue: {
       main: "#0044FF",
@@ -14,4 +16,4 @@ export const theme = createTheme({
       main: "#fff"
     }
   },
-});
+})

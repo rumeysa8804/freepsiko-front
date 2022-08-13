@@ -1,5 +1,7 @@
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
+import { MDBInput } from "mdbreact";
+import { Input } from "@chakra-ui/react";
 import login_bg from "../../img/login_bg.svg";
 import styles from "../login/login.module.css";
 let bgStyle = {
@@ -8,30 +10,62 @@ let bgStyle = {
 export function Login() {
   return (
     <>
-    <div className={styles.login_container}>
-      <div style={bgStyle} className={styles.login_bg}></div>
-      <Form className={styles.form_container}>
-        <div className={styles.form_container_2}>
-          <Form.Group className="mb-3" controlId="formBasicEmail">
-            <Form.Label>Email address</Form.Label>
-            <Form.Control type="email" placeholder="Enter email" />
-            <Form.Text className="text-muted">
-              We'll never share your email with anyone else.
-            </Form.Text>
-          </Form.Group>
+      <div className={styles.login_container}>
+        <div style={bgStyle} className={styles.login_bg}></div>
+        <div className={styles.form_container}>
+          <div lg={8} md={7} sm={6} xs={12} className={styles.form_container_2}>
+            <div className={styles.login_title}>Login</div>
+            <input
+              className={styles.login_input}
+              variant="flushed"
+              placeholder="Mail"
+            />
+            <div className={styles.login_input_label}></div>
+            <div className={styles.login_second_input}></div>
+            <input
+              className={styles.login_input}
+              variant="flushed"
+              placeholder="Password"
+            />
+            <div className={styles.login_input_label}></div>
 
-          <Form.Group className="mb-3" controlId="formBasicPassword">
-            <Form.Label>Password</Form.Label>
-            <Form.Control type="password" placeholder="Password" />
-          </Form.Group>
-          <Form.Group className="mb-3" controlId="formBasicCheckbox">
-            <Form.Check type="checkbox" label="Check me out" />
-          </Form.Group>
-          <Button variant="primary" type="submit">
-            Submit
-          </Button>
+            <Form>
+              {["checkbox"].map((type) => (
+                <div key={type} className="mb-3">
+                  <Form.Check
+                    className={styles.login_checkbox_container}
+                    type={type}
+                    id={`check-api-${type}`}
+                  >
+                    <Form.Check.Input
+                      className={styles.login_checkbox_button}
+                      type={type}
+                      isValid
+                    />
+                    <div className={styles.login_checkbox_button_text}>
+                      <Form.Check.Label>Remember me</Form.Check.Label>
+                    </div>
+                  </Form.Check>
+                </div>
+              ))}
+            </Form>
+
+            <div
+              className={styles.login_button}
+              variant="primary"
+              type="submit"
+            >
+              login
+            </div>
+            <div
+              className={styles.login_button_forgot}
+              variant="primary"
+              type="submit"
+            >
+              Forgot Password
+            </div>
+          </div>
         </div>
-      </Form>
       </div>
     </>
   );
