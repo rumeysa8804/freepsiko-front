@@ -4,9 +4,13 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import styles from "../section4/section4.module.css"
+import img1 from "../../img/section4_1.svg";
+import img2 from "../../img/section4_2.svg";
+
 function Section4() {
   return (
     <div className={styles.section4_big_container}>
+      {/* <img className={styles.img2} src={img2} /> */}
     <Container className={styles.section4_container}>
       <Row className={styles.section4_row}>
     <Col  sm={6} xs={12} className={`${styles.left_card} mh-100`}>
@@ -29,6 +33,7 @@ sadipscing elitr sed diam nonumy
       </Col>
       </Row>
     </Container>
+      <img className={styles.img1} src={img1} />
     </div>
   );
 }

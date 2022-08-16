@@ -23,7 +23,7 @@ sadipscing elitr sed diam nonumy
         <Button className={styles.left_card_button} variant="primary">More</Button>
       </Card.Body>
     </Col>
-        <Col style={sectionStyle} lg={3} md={4} sm={5} xs={12} className={`${styles.right_card} mh-100`}>
+        <Col  lg={3} md={4} sm={5} xs={12} className={`${styles.right_card} mh-100`}>
           {/* <img className={styles.right_card_img} src={card_img}/> */}
         <Card.Body className={styles.right_card_body}>
           <Card.Title className={styles.right_card_title}>More information</Card.Title>

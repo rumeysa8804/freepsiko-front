@@ -8,10 +8,12 @@ import Section4 from "../section4/section4";
 import Section5 from "../section5/section5";
 import { Faq } from "../faq/faq";
 import { Footer } from "../footer/footer";
+import { HomeImage } from "../homeImage/homeImage";
 
 export function Home() {
   return (
     <>
+      <HomeImage/>
       <Pink />
       <Section4 />
       <Section5 />

@@ -20,12 +20,16 @@
 }
 .faq_title{
   font-size: 30px;
-  /* background-image: linear-gradient(to right, #3E39D1, #EC75DC); */
-  /* color: transparent; */
+  background: linear-gradient(
+    to right, 
+    #3E39D1, 
+    #EC75DC
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   text-transform: uppercase;
-color: black;
-margin: auto;
-letter-spacing: 4px;
+  margin: auto;
+  letter-spacing: 4px;
 }
 
 .faq_item {

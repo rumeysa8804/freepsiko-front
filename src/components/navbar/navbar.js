@@ -9,7 +9,7 @@ import logo from "../../img/logo.svg";
 import styles from "../navbar/navbar.module.css";
 function NavScrollExample() {
   return (
-    <Navbar bg="light" className={styles.navbar_container} expand="lg">
+    <Navbar className={styles.navbar_container} expand="lg" style={{position:"fixed",width:"100%",backdropFilter: "blur(2px)"}}>
       <Container className={styles.navbar_container2}>
         <Navbar.Brand href="#">
           <img className={styles.navbar_logo_img} src={logo} />

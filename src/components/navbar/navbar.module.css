@@ -11,6 +11,10 @@
 .navbar_container {
   font-family: "Roboto", sans-serif;
   z-index: 999;
+  color:blue;
+  background-color: #fff;
+  opacity: 0.8;
+  position:absolute;
 }
 .navbar_link{
   text-decoration: none;
