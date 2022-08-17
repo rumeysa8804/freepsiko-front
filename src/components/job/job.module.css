@@ -1,0 +1,111 @@
+.job_black_container {
+  background-color: black;
+  padding: 80px 40px;
+  /* position: relative; */
+  font-family: "Roboto", sans-serif;
+}
+.job_black_container_title {
+  font-size: 35px;
+  color: white;
+  font-weight: 700;
+}
+.job_black_container_text {
+  font-size: 15px;
+  color: #939393;
+}
+.job_black_container_img {
+  width: 260px;
+  height: 260px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  border-radius: 200px;
+  background-image: linear-gradient(to right, #cf5848, #9093b3);
+  -webkit-filter: blur(30px);
+}
+
+.job_container {
+  width: 50%;
+  margin: auto;
+}
+.job_dropdown_button {
+  margin-top: 50px;
+
+  width: 100%;
+  border: 0;
+  /* font-size: 15px; */
+  padding: 22px;
+  background-color: #f2f2f2;
+  border-radius: 15px;
+  height: 65px !important;
+}
+.job_input_container {
+  display: flex;
+  font-family: "Roboto", sans-serif;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+.job_input_group {
+  width: 47%;
+}
+.job_input {
+  font-family: "Roboto", sans-serif;
+  border-radius: 15px;
+  padding: 18px;
+  background-color: #f2f2f2;
+  color: #939393;
+  border: 0;
+}
+.job_text_area {
+  margin-top: 10px;
+  border-radius: 15px;
+
+  font-family: "Roboto", sans-serif;
+  background-color: #f2f2f2;
+  color: #939393;
+  border: 0;
+  height: 100px;
+}
+.job_button_container {
+  width: 100%;
+}
+.job_send_button {
+  width: 50%;
+  margin: auto;
+  background-color: #4c8ceb;
+  margin-top: 15px;
+  border-radius: 15px;
+  font-family: "Roboto", sans-serif;
+cursor: pointer;
+  padding: 18px;
+  text-align: center;
+  color: white;
+}
+@media only screen and (max-width: 576px) {
+  .job_container {
+    width: 80%;
+  }
+  .job_input_container {
+    flex-direction: column;
+  }
+  .job_input_group {
+    width: 100%;
+    margin-top: 10px;
+  }
+  .job_input_container {
+    margin-top: 0px;
+  }
+  .job_send_button {
+    width: 100%;
+  }
+  .job_black_container_img {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    border-radius: 200px;
+    background-image: linear-gradient(to right, #cf5848, #9093b3);
+    -webkit-filter: blur(30px);
+  }
+}

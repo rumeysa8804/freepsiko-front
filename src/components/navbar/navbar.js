@@ -27,7 +27,7 @@ function NavScrollExample() {
           <Link className={styles.navbar_link} to="/">
             <div className={`${styles.navbar_navlink}`}>Explore</div>
           </Link>
-          <Link className={styles.navbar_link} to="/">
+          <Link className={styles.navbar_link} to="/jobs">
             <div className={`${styles.navbar_navlink}`}>Jobs</div>
           </Link>
           <Link className={styles.navbar_link} to="/">
