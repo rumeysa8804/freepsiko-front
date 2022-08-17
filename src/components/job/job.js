@@ -3,6 +3,12 @@ import FloatingLabel from 'react-bootstrap/FloatingLabel';
 import Form from 'react-bootstrap/Form';
 import styles from "../job/job.module.css";
 import { Footer } from "../footer/footer";
+import Col from 'react-bootstrap/Col';
+import ListGroup from 'react-bootstrap/ListGroup';
+import Row from 'react-bootstrap/Row';
+import Tab from 'react-bootstrap/Tab';
+import { Job_Normal } from "./normal/normal";
+import { Job_Premium } from "./premium/permium";
 export function Jobs() {
   return (
     <>
@@ -13,61 +19,27 @@ export function Jobs() {
         </div>
         <div className={styles.job_black_container_img}></div>
       </div>
-      <div className={styles.job_container}>
-      <FloatingLabel  className={styles.job_dropdown_container} controlId="floatingSelect" label="Please choose what you want to do">
-      <Form.Select className={styles.job_dropdown_button} aria-label="Please choose what you want to do">
-        <option value="1">One</option>
-        <option value="2">Two</option>
-        <option value="3">Three</option>
-      </Form.Select>
-    </FloatingLabel>
-        <div className={styles.job_input_container}>
-          <InputGroup className={styles.job_input_group}>
-            <Form.Control
-              className={styles.job_input}
-              placeholder="Name"
-              aria-label="Name"
-              aria-describedby="basic-addon1"
-            />
-          </InputGroup>
-          <InputGroup className={styles.job_input_group}>
-            <Form.Control
-              className={styles.job_input}
-              placeholder="Surname"
-              aria-label="Surname"
-              aria-describedby="basic-addon1"
-            />
-          </InputGroup>
-        </div>
-        <div className={styles.job_input_container}>
-          <InputGroup className={styles.job_input_group}>
-            <Form.Control
-              className={styles.job_input}
-              placeholder="Phone"
-              aria-label="Phone"
-              aria-describedby="basic-addon1"
-            />
-          </InputGroup>
-          <InputGroup className={styles.job_input_group}>
-            <Form.Control
-              className={styles.job_input}
-              placeholder="Mail"
-              aria-label="Mail"
-              aria-describedby="basic-addon1"
-            />
-          </InputGroup>
-        </div>
-        <InputGroup className={styles.job_text_area}>
-            <Form.Control
-              className={styles.job_input}
-              placeholder="Is there anything else you want to say?"
-              aria-label="Textarea"
-              aria-describedby="basic-addon1"
-            />
-          </InputGroup>
-          <div className={styles.job_button_container}></div>
-          <div className={styles.job_send_button}>Send Message</div>
-      </div>
+      <Tab.Container id="list-group-tabs-example" defaultActiveKey="#link1">
+          <ListGroup className={styles.menu_items_container}>
+            <div style={{display: "flex", margin: "auto", marginTop: "50px"}} >
+
+            <ListGroup.Item style={{ backgroundColor: "#000", borderRadius: 30, marginRight: 5  }} className={styles.menu_item} action href="#link1">
+              Normal
+            </ListGroup.Item>
+            <ListGroup.Item style={{ backgroundColor: "#000", borderRadius: 30, marginLeft: 5  }} className={styles.menu_item} action href="#link2">
+              Premium
+            </ListGroup.Item>
+            </div>
+          </ListGroup>
+          <Tab.Content style={{padding: 0, margin: 0}}>
+            <Tab.Pane style={{padding: 0, margin: 0}} eventKey="#link1">
+             <Job_Normal/>
+            </Tab.Pane>
+            <Tab.Pane style={{padding: 0, margin: 0}} eventKey="#link2">
+            <Job_Premium/>
+            </Tab.Pane>
+          </Tab.Content>
+    </Tab.Container>
       <Footer/>
     </>
   );

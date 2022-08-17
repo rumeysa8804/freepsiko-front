@@ -6,7 +6,7 @@
 }
 .job_black_container_title {
   font-size: 35px;
-  color: white;
+  color: rgb(255, 255, 255);
   font-weight: 700;
 }
 .job_black_container_text {
@@ -23,13 +23,29 @@
   background-image: linear-gradient(to right, #cf5848, #9093b3);
   -webkit-filter: blur(30px);
 }
+.menu_items_container{
+  
+  display: flex;
+  margin-bottom: 40px;
+}
+.menu_item{
+  display: inline-block;
+  /* width: 100px; */
+  color: white;
+  /* width: 150px; */
+  text-align: center;
+  /* padding: 10px; */
+  border-radius: 15px;
+  border: 0;
+  padding: 10px 50px;
 
+}
 .job_container {
   width: 50%;
   margin: auto;
 }
 .job_dropdown_button {
-  margin-top: 50px;
+  /* margin-top: 40px; */
 
   width: 100%;
   border: 0;
@@ -66,11 +82,28 @@
   border: 0;
   height: 100px;
 }
-.job_button_container {
-  width: 100%;
-}
 .job_send_button {
   width: 50%;
+  margin: auto;
+  background-color: #4c8ceb;
+  margin-top: 15px;
+  border-radius: 15px;
+  font-family: "Roboto", sans-serif;
+cursor: pointer;
+  padding: 18px;
+  text-align: center;
+  color: white;
+}
+.job_input_premium_container{
+  flex-direction: column;
+
+}
+.job_input_premium_group{
+  width: 100%;
+  margin-top: 10px;
+}
+.job_send_premium_button{
+  width: 100%;
   margin: auto;
   background-color: #4c8ceb;
   margin-top: 15px;
@@ -86,7 +119,6 @@ cursor: pointer;
     width: 80%;
   }
   .job_input_container {
-    flex-direction: column;
   }
   .job_input_group {
     width: 100%;
@@ -107,5 +139,16 @@ cursor: pointer;
     border-radius: 200px;
     background-image: linear-gradient(to right, #cf5848, #9093b3);
     -webkit-filter: blur(30px);
+  }
+
+  .menu_items_container{
+    flex-direction: column;
+  }
+  .menu_item{
+    display: inline-block;
+    width: 100%;
+    color: white;
+    /* width: 150px; */
+    padding: 10px 30px;
   }
 }
