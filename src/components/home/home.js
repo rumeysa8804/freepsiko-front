@@ -7,7 +7,6 @@ import { Pink } from "../pink/pink";
 import Section4 from "../section4/section4";
 import Section5 from "../section5/section5";
 import { Faq } from "../faq/faq";
-import { Footer } from "../footer/footer";
 
 export function Home() {
   return (
@@ -16,7 +15,6 @@ export function Home() {
       <Section4 />
       <Section5 />
       <Faq />
-      <Footer />
     </>
   );
 }

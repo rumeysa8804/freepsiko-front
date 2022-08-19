@@ -40,7 +40,6 @@ export function Jobs() {
             </Tab.Pane>
           </Tab.Content>
     </Tab.Container>
-      <Footer/>
     </>
   );
 }

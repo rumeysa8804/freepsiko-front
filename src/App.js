@@ -7,6 +7,8 @@ import { Home } from "./components/home/home.js";
 import { Login } from "./components/login/Login";
 import { Jobs } from "./components/job/job";
 import style from "./main.css"
+import { Explore } from "./components/explore/explore.js";
+import { Footer } from "./components/footer/footer.js";
 export function App() {
     return (
       <BrowserRouter>
@@ -17,8 +19,9 @@ export function App() {
         <Route  exact path="/" element={<Home/>} />
         <Route  exact path="/login" element={<Login/>} />
         <Route  exact path="/jobs" element={<Jobs/>} />
-        {/* <Route  exact path="/about" element={} /> */}
+        <Route  exact path="/explore" element={ <Explore/>} />
       </Routes>
+     <Footer/>
       {/* </ThemeProvider> */}
       </ChakraProvider>
       </BrowserRouter>

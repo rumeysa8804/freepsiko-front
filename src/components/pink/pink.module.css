@@ -37,6 +37,8 @@
 
 /* Modal */
 .pink_modal_container{
+  font-family: "Roboto", sans-serif;
+
     /* background-color: #c56868; */
     display: flex;
     justify-content: center;
@@ -46,6 +48,8 @@
     padding: 0;
 }
 .pink_modal_container_div_1{
+  font-family: "Roboto", sans-serif;
+
     /* margin: auto; */
     background-color: initial;
     height: 92vh;
@@ -62,6 +66,8 @@
     align-items: center;
 }
 .modal_text{
+  font-family: "Roboto", sans-serif;
+
     color: white;
 }
 .modal_button{
@@ -70,6 +76,7 @@
     color: black;
     border: 0;
     border-radius: 10px;
+  font-family: "Roboto", sans-serif;
     padding: 8px 25px;
     display: inline-block;
     margin-top: 20px;
