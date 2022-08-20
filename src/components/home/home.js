@@ -18,7 +18,6 @@ export function Home() {
       <Section4 />
       <Section5 />
       <Faq />
-      <Footer />
     </>
   );
 }

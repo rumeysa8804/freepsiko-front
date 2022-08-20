@@ -22,23 +22,23 @@ function NavScrollExample() {
             navbarScroll
           ></Nav>
           <Link className={styles.navbar_link} to="/">
-            <div className={`${styles.navbar_navlink}`}>Home</div>
+            <div className={`${styles.navbar_navlink}`}>Ana Sayfa</div>
+          </Link>
+          <Link className={styles.navbar_link} to="/explore">
+            <div className={`${styles.navbar_navlink}`}>Çalışmalar</div>
+          </Link>
+          <Link className={styles.navbar_link} to="/jobs">
+            <div className={`${styles.navbar_navlink}`}>Çalışan Ol</div>
           </Link>
           <Link className={styles.navbar_link} to="/">
-            <div className={`${styles.navbar_navlink}`}>Explore</div>
+            <div className={`${styles.navbar_navlink}`}>Hakkında</div>
           </Link>
           <Link className={styles.navbar_link} to="/">
-            <div className={`${styles.navbar_navlink}`}>Jobs</div>
-          </Link>
-          <Link className={styles.navbar_link} to="/">
-            <div className={`${styles.navbar_navlink}`}>About</div>
-          </Link>
-          <Link className={styles.navbar_link} to="/">
-            <div className={`${styles.navbar_navlink}`}>Help</div>
+            <div className={`${styles.navbar_navlink}`}>Yardım</div>
           </Link>
           <Link className={styles.navbar_link} to="/login">
             <button variant="" className={`${styles.navbar_button} rounded`}>
-              Login
+            GİRİŞ
             </button>
           </Link>
         </Navbar.Collapse>

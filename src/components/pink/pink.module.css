@@ -17,6 +17,7 @@
     padding: 8px 25px;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     transition: all 0.5s;
+    margin-top: 10px;   
 }
 .button:hover{
     background-color: rgb(0, 0, 0);
@@ -31,4 +32,56 @@
     transition: all 0.5s;
     box-shadow: rgba(255, 255, 255, 0.25) 0px 54px 55px, rgba(255, 255, 255, 0.12) 0px -12px 30px, rgba(255, 255, 255, 0.12) 0px 4px 6px, rgba(255, 255, 255, 0.17) 0px 12px 13px, rgba(255, 255, 255, 0.09) 0px -3px 5px;
 
+}
+
+
+/* Modal */
+.pink_modal_container{
+  font-family: "Roboto", sans-serif;
+
+    /* background-color: #c56868; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+.pink_modal_container_div_1{
+  font-family: "Roboto", sans-serif;
+
+    /* margin: auto; */
+    background-color: initial;
+    height: 92vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pink_modal_container_div{
+    /* margin: auto; */
+    background-color: #4b0f0f;
+    /* height: 100vh; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.modal_text{
+  font-family: "Roboto", sans-serif;
+
+    color: white;
+}
+.modal_button{
+    /* style={{backgroundColor: "#000", border: 0, color: "#fff"}}  */
+    background-color: white;
+    color: black;
+    border: 0;
+    border-radius: 10px;
+  font-family: "Roboto", sans-serif;
+    padding: 8px 25px;
+    display: inline-block;
+    margin-top: 20px;
+
+}
+.modal_logo{
+    width: 40px;
 }
