@@ -1,0 +1,38 @@
+.img {
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+    margin-top:20px;
+}
+.col {
+    margin-top:10%;
+}
+.card_body {
+    margin:10px;
+}
+.card {
+    width: 100px;
+    background-color: red;
+    transform: translate(50%,50%);
+  }
+  .cards_right {
+    border-radius:20px;
+    height:200px;
+    align-items: center;
+  }
+
+.transaction_history_row_1 {
+    background-color:#e2e2e2;
+    border-radius: 15px;
+    margin-top:10px;
+    height:60px;
+    padding:10px;
+}
+.transaction_history_row_2 {
+    background-color:#f0e4d5;
+    border-radius: 15px;
+    margin-top:10px;
+    height:60px;
+    padding:10px;
+}

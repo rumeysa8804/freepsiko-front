@@ -1,0 +1,67 @@
+.contact {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin:10px;
+    width:170px;
+  }
+  .contact_card {
+    border-radius:20px;
+    align-items: center;
+    background-color: black;
+    margin:10px;
+  }
+  .contact_row {
+    padding: 10px;
+  }
+  .contact_chat {
+    color:gray;
+  }
+  .contact_wp{
+    font-size:16px;
+    color:gray;
+
+  }
+  .FaCircle{
+    color:green;
+  }
+  .BsWhatsapp {
+    color:green;
+    font-size:1.2rem;
+  }
+   @media (max-width: 768px) {
+    .contact {
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        margin:10px;
+        width:100px;
+      }
+      .contact_card {
+        border-radius:20px;
+        align-items: center;
+        background-color: black;
+        margin:10px;
+      }
+      .contact_row {
+        padding: 10px;
+      }
+      .contact_chat {
+        color:gray;
+        text-align: center;
+      }
+      .contact_wp{
+        font-size:12px;
+        color:gray;
+        text-align: center;
+      }
+      .FaCircle{
+        color:green;
+        margin:Auto;
+      }
+      .BsWhatsapp {
+        color:green;
+        font-size:1.2rem;
+        margin:Auto;
+      }
+  }

@@ -2,12 +2,18 @@ import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import { MDBInput } from "mdbreact";
 import { Input } from "@chakra-ui/react";
+import { useNavigate } from "react-router-dom";
 import login_bg from "../../img/login_bg.svg";
 import styles from "../login/login.module.css";
 let bgStyle = {
   backgroundImage: login_bg,
 };
 export function Login() {
+  let navigate = useNavigate(); 
+  const routeChange = () =>{ 
+    let path = '/profile'; 
+    navigate(path);
+  }
   return (
     <>
       <div className={styles.login_container}>
@@ -54,6 +60,7 @@ export function Login() {
               className={styles.login_button}
               variant="primary"
               type="submit"
+              onClick={routeChange}
             >
               login
             </div>
