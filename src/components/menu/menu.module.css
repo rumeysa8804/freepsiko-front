@@ -1,74 +1,56 @@
-.menu {
-    background-color: #fff;
-    height: 100vh;
-    float:left;
-    margin-left:-15px;
-    
+.button{
+    background-color: #E23072;
+    border-radius: 13px;
+    width: 100%;
+    padding: 5px;
+  font-family: "Roboto", sans-serif;
+color: white;
 }
-.menu_top {
-    padding-top:100px;
-}
-.menu_low {
-    padding-top:50px;
-}
-.menu_ul {
-    padding-left:10px;
-}
-.menu_text {
-    margin-left:-90px;
-}
-.menu_span {
-    margin: 10px;
-    font-size: 20px;
-    font-weight:500;    
-}
-.icon {
-    margin-left:10px;
-    margin-top:5px;
-}
-.menu_li {
-    background-color:#e2e2e2;
-    padding: 10px;
-    width:250px;
-    font-size: 20px;
-    border-radius: 15px;
-    margin: 10px;
-}
-@media (max-width: 768px) {
-  .menu {
-      width: 90px;
-      position:absolute;
-      
-  }
-  .menu_li {
-      width: 60px;
-      height:50px;
 
+.offcanvas{
+/* padding: 20px; */
+font-family: "Roboto", sans-serif;
+width: 100%;
+
+}
+.offcanvas_title{
+  font-family: "Roboto", sans-serif;
+
+    font-weight: 700;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.offcanvas_item{
+    display: flex;
+  font-family: "Roboto", sans-serif;
+  align-items: center;
+  background-color: #f0f0f0;
+  border-radius: 15px;
+  padding: 10px 12px;
+  margin-bottom: 5px;
+  transition: all 0.5s;
+}
+.offcanvas_item:hover{
+color: black;
+    background-color: #ffffff;
+    transition: all 0.5s;
+
+}
+
+
+@media only screen and (max-width: 576px)  {
+  .button{
+      /* margin: auto; */
+      width: 300px;
   }
-  .wp {
-      position: fixed;
-      bottom: 0;
-      right: 0;
-      margin:10px;
-      width:170px;
-    }
-    .wp_card {
-      border-radius:20px;
-      align-items: center;
-      background-color: black;
-      margin:10px;
-    }
-    .wp_row {
-      padding: 10px;
-    }
-    .wp_chat {
-      color:gray;
-      margin-left:-15px;
-    }
-    .wp_wp{
-      font-size:16px;
-      color:gray;
-      margin-left:-5px;
+
+
+}
+
+@media only screen and (max-width: 991px)  {
+  .offcanvas{
+    padding: 20px;
     }
 
 }
+

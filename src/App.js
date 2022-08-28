@@ -15,8 +15,7 @@ import { Footer } from "./components/footer/footer.js";
 export function App() {
     return (
       <BrowserRouter>
-          <ChakraProvider>
-      {/* <ThemeProvider theme={theme}> */}
+          <ChakraProvider theme={theme}>
       <Navbar/>
       <Routes>
         <Route  exact path="/" element={<Home/>} />
@@ -29,7 +28,6 @@ export function App() {
         <Route  exact path="/explore" element={ <Explore/>} />
       </Routes>
      <Footer/>
-      {/* </ThemeProvider> */}
       </ChakraProvider>
       </BrowserRouter>
 

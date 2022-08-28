@@ -9,18 +9,18 @@ export function Contact() {
 <div className={styles.contact}>
     <Card className={styles.contact_card}>
         <div >
-            <Row className={styles.contact_row}>
-                <Col style={{margin:"auto"}}><FaCircle className={styles.FaCircle}/></Col>
-                <Col className={styles.contact_chat}>Chat</Col>
-            </Row>
+            <div className={styles.contact_row}>
+                <div><FaCircle className={styles.FaCircle}/></div>
+                <div className={styles.contact_chat}>Chat</div>
+            </div>
            
         </div>
     </Card>
     <Card className={styles.contact_card}>
-            <Row className={styles.contact_row}>
-                <Col style={{margin:"auto"}}><BsWhatsapp className={styles.BsWhatsapp}/></Col>
-                <Col className={styles.contact_wp}>WhatsApp</Col>
-            </Row>
+            <div className={styles.contact_row}>
+                <div><BsWhatsapp className={styles.BsWhatsapp}/></div>
+                <div className={styles.contact_wp}>WhatsApp</div>
+            </div>
     </Card>
 
 </div>

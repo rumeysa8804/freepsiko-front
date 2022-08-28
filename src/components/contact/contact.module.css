@@ -13,6 +13,10 @@
   }
   .contact_row {
     padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
   }
   .contact_chat {
     color:gray;
@@ -24,9 +28,11 @@
   }
   .FaCircle{
     color:green;
+    margin-right: 8px;
   }
   .BsWhatsapp {
     color:green;
+    margin-right: 8px;
     font-size:1.2rem;
   }
    @media (max-width: 768px) {

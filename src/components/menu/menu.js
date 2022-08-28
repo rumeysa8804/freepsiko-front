@@ -1,68 +1,116 @@
-import styles from "../menu/menu.module.css";
+import { useState } from 'react';
+import Alert from 'react-bootstrap/Alert';
+import Button from 'react-bootstrap/Button';
+import Offcanvas from 'react-bootstrap/Offcanvas';
+import Col from 'react-bootstrap/Col';
 import {HashLink as Link} from 'react-router-hash-link';
-import { TbCircles } from "react-icons/tb";
-import { RiAccountCircleFill } from "react-icons/ri";
-import { AiOutlineLock } from "react-icons/ai";
-import { MdOutlinePrivacyTip } from "react-icons/md";
-import { IoHelpOutline } from "react-icons/io5";
-import {  Row, Col } from 'react-grid-system';
-
+import styles from '../menu/menu.module.css'
+import profile from '../../img/profile.svg'
+import account from '../../img/account.svg'
+import security from '../../img/security.svg'
+import privacy from '../../img/privacy.svg'
+import question from '../../img/question.svg'
 export function Menu() {
-    document.body.style.backgroundColor = "#e2e2e2";
+  const [show, setShow] = useState(false);
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+
   return (
     <>
-    <div className={styles.menu}>
-        <ul className={styles.menu_ul}>
-            <div className={styles.menu_top}>
-            <span className={styles.menu_span}>Menu</span>
-                <li className={styles.menu_li}>
-                <Link to="/profile">
-                    <Row>
-                        <Col><TbCircles className={styles.icon}/></Col>
-                        <Col><div className={styles.menu_text}>Profil</div></Col>
-                    </Row>
-                </Link>
-                   
-                </li>
-                <li className={styles.menu_li}>
-                <Link to="/account">
-                    <Row>
-                        <Col><RiAccountCircleFill className={styles.icon}/></Col>
-                        <Col><div className={styles.menu_text}>Hesap</div></Col>
-                    </Row>
-                </Link>
-                </li>
-                <li className={styles.menu_li}>
-                <Link to="/security">
-                    <Row>
-                        <Col><AiOutlineLock className={styles.icon}/></Col>
-                        <Col><div className={styles.menu_text}>Güvenlik</div></Col>
-                    </Row>
-                </Link>
-                </li>
-            </div>
-            <div className={styles.menu_low}>
-                <span className={styles.menu_span}>Bot</span>
-                <li className={styles.menu_li}>
-                <Link to="/privacy-policy">
-                    <Row>
-                        <Col><MdOutlinePrivacyTip className={styles.icon}/></Col>
-                        <Col><div className={styles.menu_text}>Gizlilik</div></Col>
-                    </Row>
-                </Link>
-                </li>
-                <li className={styles.menu_li}>
-                <Link to="/help">
-                    <Row>
-                        <Col><IoHelpOutline className={styles.icon}/></Col>
-                        <Col><div className={styles.menu_text}>Yardım</div></Col>
-                    </Row>
-                </Link>
-                </li>
+    <Col style={{ display: "flex", justifyContent: "center"}}>
+      <button style={{marginTop: "100px"}} className={`${styles.button} d-block d-md-block d-lg-none`} onClick={handleShow}>
+        Menu
+      </button>
+    </Col>
 
-            </div>
-        </ul>
-    </div>
+      <Offcanvas className={styles.offcanvas} show={show} onHide={handleClose} >
+<div className={styles.offcanvas}>
+  <div className={styles.offcanvas_title}>Menu</div>
+  <Link to="/profile">
+
+  <div className={styles.offcanvas_item}>
+    <img src={profile} style={{width: "25px", height: "25px", textAlign: "center", marginRight: "5px"}}/>
+    <div>Profil</div>
+  </div>
+  </Link>
+  <Link to="/account">
+
+  <div className={styles.offcanvas_item}>
+    <img src={account} style={{width: "25px", height: "25px", textAlign: "center", marginRight: "5px"}}/>
+    <div>Hesab</div>
+  </div>
+  </Link>
+  <Link to="/security">
+
+  <div className={styles.offcanvas_item}>
+    <img src={security} style={{width: "27px", height: "25px", textAlign: "center", marginRight: "5px"}}/>
+    <div>Güvenlik</div>
+  </div>
+  </Link>
+
+  <div className={styles.offcanvas_title} style={{marginTop: '50px'}}>Bot</div>
+  <Link to="/privacy-policy">
+  <div className={styles.offcanvas_item}>
+    <img src={privacy} style={{width: "25px", height: "25px", textAlign: "center", marginRight: "5px"}}/>
+    <div>Gizlilik</div>
+  </div>
+  </Link>
+  <Link to="/help">
+
+  <div className={styles.offcanvas_item}>
+    <img src={question} style={{width: "25px", height: "25px", textAlign: "center", marginRight: "5px"}}/>
+    <div>Yardım</div>
+  </div>
+  </Link>
+</div>
+      </Offcanvas>
+
+
+
+
+
+      <Col xs={4} sm={4} className={`${styles.offcanvas} d-none d-md-none d-lg-block`}  >
+<div className={styles.offcanvas}>
+  <div className={styles.offcanvas_title}>Menu</div>
+  <Link to="/profile">
+
+  <div className={styles.offcanvas_item}>
+    <img src={profile} style={{width: "25px", height: "25px", textAlign: "center", marginRight: "5px"}}/>
+    <div>Profil</div>
+  </div>
+  </Link>
+  <Link to="/account">
+
+  <div className={styles.offcanvas_item}>
+    <img src={account} style={{width: "25px", height: "25px", textAlign: "center", marginRight: "5px"}}/>
+    <div>Hesab</div>
+  </div>
+  </Link>
+  <Link to="/security">
+
+  <div className={styles.offcanvas_item}>
+    <img src={security} style={{width: "27px", height: "25px", textAlign: "center", marginRight: "5px"}}/>
+    <div>Güvenlik</div>
+  </div>
+  </Link>
+
+  <div className={styles.offcanvas_title} style={{marginTop: '50px'}}>Bot</div>
+  <Link to="/privacy-policy">
+  <div className={styles.offcanvas_item}>
+    <img src={privacy} style={{width: "25px", height: "25px", textAlign: "center", marginRight: "5px"}}/>
+    <div>Gizlilik</div>
+  </div>
+  </Link>
+  <Link to="/help">
+
+  <div className={styles.offcanvas_item}>
+    <img src={question} style={{width: "25px", height: "25px", textAlign: "center", marginRight: "5px"}}/>
+    <div>Yardım</div>
+  </div>
+  </Link>
+</div>
+      </Col>
     </>
   );
 }
+

@@ -1,0 +1,138 @@
+.img {
+    /* border-radius: 50%; */
+    height: 56px;
+    width: 56px;
+    object-fit: cover;
+    margin-top: 40px;
+    color: #f51e64;
+  }
+  .menu{
+    /* margin-right: 50px; */
+  }
+  .col {
+    margin-top: 46px;
+  font-family: "Roboto", sans-serif;
+  
+  }
+  .info_card{
+    transition: all 0.5s;
+    cursor: pointer;
+}
+.info_card:hover{
+  transition: all 0.5s;
+  border-color: rgba(226, 48, 114, 0.3);
+  box-shadow: rgba(226, 48, 114, 0.3) 0px 2px 8px 0px;
+}
+  .card_body {
+  font-family: "Roboto", sans-serif;
+  margin:10px;
+  }
+  .card {
+    /* width: 100px; */
+    background-color: red;
+    transform: translate(50%,50%);
+  }
+  .cards_right {
+    border-radius:20px;
+  font-family: "Roboto", sans-serif;
+  height:200px;
+    align-items: center;
+  }
+  
+  .transaction_history_row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #F2F2F2;
+    border-radius: 15px;
+    margin-top:10px;
+    /* height:60px; */
+    padding:10px;
+    width: 100%;
+  }
+  .transaction_history_row:nth-child(even) {
+  
+    background-color: #EBE6E1;
+  
+  }
+  
+  
+  
+  .progress{
+    background-color: #E23072;
+    height: 30px;
+    width: 180px;
+  font-family: "Roboto", sans-serif;
+  margin-top: 50px;
+    border-radius: 30px;
+  }
+  
+  
+  
+  @media only screen and (min-width: 1050px)  {
+    .progress{
+        width: 180px;
+  
+    }
+  }
+  @media only screen and (min-width: 991px)  {
+    .progress{
+        width: 120px;
+    }
+  }
+  @media only screen and (max-width: 991px)  {
+    .progress{
+        width: 160px;
+    }
+  }
+  @media only screen and (max-width: 900px) and (min-width: 769px)  {
+    .progress{
+        /* width: 130px; */
+    }
+  }
+  
+  @media only screen and (max-width: 700px) and (min-width: 576px)  {
+    .progress{
+        /* width: 120px; */
+    }
+  }
+  @media only screen and (max-width: 576px)  {
+    .card_container_div{
+        display: flex;
+        justify-content: center;
+    }
+    .info_card{
+        width: 300px;
+    }
+    .transaction_history_row {
+        flex-direction: column;
+  
+    }
+  }
+  
+
+  @media only screen and (max-width: 991px)  {
+    .offcanvas{
+      padding: 20px;
+      }
+  
+  }
+  
+  @media only screen and (max-width: 991px)  {
+    .col_menu{
+        margin-top: 0px;
+    }
+    .col_card{
+        margin-top: 0px;
+    }
+  }
+  
+  @media only screen and (min-width: 992px)  {
+    .col_menu{
+        margin-top: 140px;
+    }
+    .col_card{
+        margin-top: 100px;
+    }
+  }
+  
