@@ -37,7 +37,7 @@ export function Menu() {
 
   <div className={styles.offcanvas_item}>
     <img src={account} style={{width: "25px", height: "25px", textAlign: "center", marginRight: "5px"}}/>
-    <div>Hesab</div>
+    <div>Hesap</div>
   </div>
   </Link>
   <Link to="/security">
@@ -83,7 +83,7 @@ export function Menu() {
 
   <div className={styles.offcanvas_item}>
     <img src={account} style={{width: "25px", height: "25px", textAlign: "center", marginRight: "5px"}}/>
-    <div>Hesab</div>
+    <div>Hesap</div>
   </div>
   </Link>
   <Link to="/security">

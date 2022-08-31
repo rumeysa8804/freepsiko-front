@@ -55,6 +55,62 @@ height:200px;
 
 }
 
+.modal_title {
+  font-size: 24p;
+  font-weight: 40;
+  margin-top:20px;
+  margin-bottom:30px;
+  text-align:center;
+}
+input[type=text] {
+    margin-top:10px;
+    background-color:white;
+    border-color: white;
+  }
+  input[type=email] {
+    margin-top:10px;
+  background-color: white;
+  border-color: white;
+
+  }
+  input[type=password] {
+    margin-top:10px;
+  background-color: white;
+  border-color: white;
+  }
+  .modal_button{
+    background-color: white;
+    color: #e23072;
+    border: 0;
+    border-radius: 10px;
+    font-family: "Roboto", sans-serif;
+    padding: 8px 25px;
+    display: inline-block;
+    margin-top: 20px;
+    align-items: center;
+
+}
+.card_container {
+  border: 0;
+  max-width: 450px;
+  border-radius: 30px;
+  font-family: "Roboto", sans-serif;
+  /* margin: auto; */
+  margin-bottom: 20px;
+}
+.card_header_container,
+.card_footer_container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+.card_header_right {
+  color: #e23072;
+}
+.card_header_container {
+  border: 0;
+  background-color: transparent;
+}
 
 
 .progress{
