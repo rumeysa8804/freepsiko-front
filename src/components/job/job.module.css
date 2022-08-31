@@ -1,6 +1,6 @@
 .job_black_container {
   background-color: black;
-  padding: 92.5px 40px;
+  padding: 168.5px 40px 92.5px 40px;
   /* position: relative; */
   font-family: "Roboto", sans-serif;
 }
@@ -131,8 +131,8 @@ cursor: pointer;
     width: 100%;
   }
   .job_black_container_img {
-    width: 200px;
-    height: 200px;
+    /* width: 200px; */
+    /* height: 200px; */
     position: absolute;
     right: 0;
     top: 0;
@@ -151,4 +151,18 @@ cursor: pointer;
     /* width: 150px; */
     padding: 10px 30px;
   }
+}
+
+@media only screen and (max-width: 520px) {
+  .job_black_container_img {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    border-radius: 200px;
+    background-image: linear-gradient(to right, #cf5848, #9093b3);
+    -webkit-filter: blur(30px);
+  }
+
 }

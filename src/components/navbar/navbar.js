@@ -12,7 +12,9 @@ function NavScrollExample() {
     <Navbar className={styles.navbar_container} expand="lg" style={{position:"fixed",width:"100%",backdropFilter: "blur(2px)"}}>
       <Container className={styles.navbar_container2}>
         <Navbar.Brand href="#">
+      <Link className={styles.navbar_link} to="/">
           <img className={styles.navbar_logo_img} src={logo} />
+      </Link>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">

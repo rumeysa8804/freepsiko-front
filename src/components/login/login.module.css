@@ -11,7 +11,7 @@
   /* top: 0; */
   background-image: url(../../img/login_bg.svg);
   filter: blur(15px);
-  height: calc(100vh - 76px);
+  height: calc(100vh - 50px);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
