@@ -24,8 +24,8 @@ export function Security() {
             <Card className={styles.info_card} style={{borderRadius:"20px",alignItems: "center",height:"200px"}}>
             <BsGoogle className={styles.img} />
                 <div className={styles.card_body}>
-                    <div style={{fontSize: "20px",textAlign: "center"}}>Kişisel</div>
-                    <div style={{fontSize: "16px",textAlign: "center"}}>Bilgiler</div>
+                    <div style={{fontSize: "20px",textAlign: "center"}}>Google Account</div>
+                    <div style={{fontSize: "16px",textAlign: "center"}}>Bağlantıyı Kes</div>
                 </div>
             </Card>  
             </div>

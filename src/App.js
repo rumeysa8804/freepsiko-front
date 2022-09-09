@@ -5,6 +5,7 @@ import { theme } from './theme/Theme.js'
 import Navbar from "./components/navbar/navbar.js";
 import { Home } from "./components/home/home.js";
 import { Login } from "./components/login/Login";
+import { Register } from "./components/register/register";
 import { Profile } from "./components/profile/profile.js";
 import { Account } from "./components/account/account.js";
 import { Security } from "./components/security/security.js";
@@ -12,6 +13,7 @@ import { Jobs } from "./components/job/job";
 import style from "./main.css"
 import { Explore } from "./components/explore/explore.js";
 import { Footer } from "./components/footer/footer.js";
+import { ForgotPassword } from "./components/forgotPassword/forgotPassword.js";
 export function App() {
     return (
       <BrowserRouter>
@@ -20,6 +22,8 @@ export function App() {
       <Routes>
         <Route  exact path="/" element={<Home/>} />
         <Route  exact path="/login" element={<Login/>} />
+        <Route  exact path="/register" element={<Register/>} />
+        <Route  exact path="/forgot-password" element={<ForgotPassword/>} />
         <Route  exact path="/profile" element={<Profile/>} />
         <Route  exact path="/account" element={<Account/>} />
         <Route  exact path="/security" element={<Security/>} />
