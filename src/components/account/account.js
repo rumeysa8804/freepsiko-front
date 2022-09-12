@@ -69,10 +69,18 @@ export function Account() {
             </div>
             </Col>
         </Row>
+        <Row><Col style={{marginTop: "46px"}} sm={6} lg={3} className={styles.col}>
+            <div className={styles.card_container_div}>
+            <Card className={styles.info_card} style={{borderRadius:"20px",alignItems: "center",height:"80px"}} onClick={onOfferOpen}>
+                <div className={styles.card_body}>
+                    <div style={{fontSize: "20px",textAlign: "center",marginTop:"10%"}}>İş Tekliflerim <i style={{color:"#E23072"}}>(1)</i></div>
+                </div>
+            </Card>  
+            </div>
+            </Col></Row>
         </Col>
         </Row>
     </Container>
-    <button className={styles.modal_button} onClick={onOfferOpen}>MODAL 4 ??</button> {/* burası kalkacak */}
     <Modal onClose={onPersonalInfoClose} isOpen={isPersonalInfoOpen} isCentered >
         <ModalOverlay       bg='blackAlpha.300'
       backdropFilter='blur(10px) ' />
@@ -140,6 +148,23 @@ export function Account() {
                       </div>
                     </Card.Body>
                   </Card>
+                </Col>
+                <Col>
+                <Card  className={styles.card_container}>
+                   <Card.Header className={styles.card_header_container}>
+                    <div className={styles.card_header_left}>Jobs</div>
+                    <div className={styles.card_header_right}>14 August</div>
+                  </Card.Header>
+                <Card.Body>
+                  <Card.Text className={styles.card_text}>
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                  </Card.Text>
+                    <div className={styles.card_footer_container}>
+                    <div className={styles.card_footer_left}>BGO TEAM</div>
+                    <div className={styles.card_footer_rigth}>Full Time</div>
+                    </div>
+                </Card.Body>
+              </Card>
                 </Col>
                 </Row>
               </Container>

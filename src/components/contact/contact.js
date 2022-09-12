@@ -3,6 +3,7 @@ import { Row, Col } from 'react-grid-system';
 import Card from 'react-bootstrap/Card';
 import { BsWhatsapp } from "react-icons/bs";
 import { FaCircle } from "react-icons/fa";
+import {BrowserView, MobileView} from 'react-device-detect';
 export function Contact() {
     return(
         <>
@@ -11,7 +12,10 @@ export function Contact() {
         <div >
             <div className={styles.contact_row}>
                 <div><FaCircle className={styles.FaCircle}/></div>
+                <BrowserView>
                 <div className={styles.contact_chat}>Chat</div>
+            </BrowserView>
+  
             </div>
            
         </div>
@@ -19,7 +23,10 @@ export function Contact() {
     <Card className={styles.contact_card}>
             <div className={styles.contact_row}>
                 <div><BsWhatsapp className={styles.BsWhatsapp}/></div>
+                <BrowserView>
                 <div className={styles.contact_wp}>WhatsApp</div>
+            </BrowserView>
+
             </div>
     </Card>
 

@@ -10,6 +10,7 @@ import { Profile } from "./components/profile/profile.js";
 import { Account } from "./components/account/account.js";
 import { Security } from "./components/security/security.js";
 import { Jobs } from "./components/job/job";
+import { Help } from "./components/help/help.js";
 import style from "./main.css"
 import { Explore } from "./components/explore/explore.js";
 import { Footer } from "./components/footer/footer.js";
@@ -27,7 +28,7 @@ export function App() {
         <Route  exact path="/profile" element={<Profile/>} />
         <Route  exact path="/account" element={<Account/>} />
         <Route  exact path="/security" element={<Security/>} />
-        {/* <Route  exact path="/about" element={} /> */}
+        <Route  exact path="/help" element={<Help/>} />
         <Route  exact path="/jobs" element={<Jobs/>} />
         <Route  exact path="/explore" element={ <Explore/>} />
       </Routes>
