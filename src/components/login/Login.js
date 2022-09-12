@@ -20,7 +20,7 @@ export function Login() {
         <div style={bgStyle} className={styles.login_bg}></div>
         <div className={styles.form_container}>
           <div lg={8} md={7} sm={6} xs={12} className={styles.form_container_2}>
-            <div className={styles.login_title}>Login</div>
+            <div className={styles.login_title}>GİRİŞ</div>
             <input
               className={styles.login_input}
               variant="flushed"
@@ -28,7 +28,7 @@ export function Login() {
             />
             <div className={styles.login_input_label}></div>
             <div className={styles.login_second_input}></div>
-            <input
+            <input type="password"
               className={styles.login_input}
               variant="flushed"
               placeholder="Password"
@@ -49,7 +49,7 @@ export function Login() {
                       isValid
                     />
                     <div className={styles.login_checkbox_button_text}>
-                      <Form.Check.Label>Remember me</Form.Check.Label>
+                      <Form.Check.Label>Beni Hatırla</Form.Check.Label>
                     </div>
                   </Form.Check>
                 </div>
@@ -62,7 +62,7 @@ export function Login() {
               type="submit"
               onClick={routeChange}
             >
-              login
+              Giriş
             </div>
             <div
               className={styles.login_button_forgot}

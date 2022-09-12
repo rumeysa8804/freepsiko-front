@@ -1,11 +1,19 @@
 import InputGroup from "react-bootstrap/InputGroup";
 import FloatingLabel from 'react-bootstrap/FloatingLabel';
 import Form from 'react-bootstrap/Form';
-import styles from "../job.module.css";
-export function Job_Normal() {
+import styles from "../help/help.module.css";
+export function Help() {
   return (
     <>
+      <div className={styles.job_black_container}>
+        <div className={styles.job_black_container_title}>Yardım</div>
+        <div className={styles.job_black_container_text}>
+        Bizimle iletişime geç. En kısa sürede sana geri döneceğiz.
+        </div>
+        <div className={styles.job_black_container_img}></div>
+      </div>
       <div className={styles.job_container}>
+        <div style={{fontSize:"24px",fontWeight:"500",textAlign:"center",margin:"30px"}}>CONTACT</div>
       <FloatingLabel  className={styles.job_dropdown_container} controlId="floatingSelect" label="Please choose what you want to do">
       <Form.Select className={styles.job_dropdown_button} aria-label="Please choose what you want to do">
         <option value="1">One</option>
@@ -58,7 +66,7 @@ export function Job_Normal() {
             />
           </InputGroup>
           <div className={styles.job_button_container}></div>
-          <div className={styles.job_send_button}>Gönder</div>
+          <div className={styles.job_send_button}>Send Message</div>
       </div>
     </>
   );

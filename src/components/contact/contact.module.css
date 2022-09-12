@@ -3,10 +3,10 @@
     bottom: 0;
     right: 0;
     margin:10px;
-    width:170px;
+    width:160px;
   }
   .contact_card {
-    border-radius:20px;
+    border-radius:10px;
     align-items: center;
     background-color: black;
     margin:10px;
@@ -41,25 +41,16 @@
         bottom: 0;
         right: 0;
         margin:10px;
-        width:100px;
+        width:20%;
       }
       .contact_card {
-        border-radius:20px;
+        border-radius:10px;
         align-items: center;
         background-color: black;
         margin:10px;
       }
       .contact_row {
         padding: 10px;
-      }
-      .contact_chat {
-        color:gray;
-        text-align: center;
-      }
-      .contact_wp{
-        font-size:12px;
-        color:gray;
-        text-align: center;
       }
       .FaCircle{
         color:green;

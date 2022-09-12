@@ -49,8 +49,8 @@ function NavScrollExample() {
           <Link className={styles.navbar_link} to="/">
             <div className={`${styles.navbar_navlink}`} onClick={onAboutOpen}>Hakkında</div>
           </Link>
-          <Link className={styles.navbar_link} to="/">
-            <div className={`${styles.navbar_navlink}`} onClick={onHelpOpen}>Yardım</div>
+          <Link className={styles.navbar_link} to="/help">
+            <div className={`${styles.navbar_navlink}`}>Yardım</div>
           </Link>
           <Link className={styles.navbar_link} to="/login">
             <button variant="" className={`${styles.navbar_button} rounded`}>
@@ -65,28 +65,10 @@ function NavScrollExample() {
       backdropFilter='blur(10px) ' />
         <ModalContent  bg='blackAlpha.200' style={{border: "1px solid white", borderRadius: "15px"}}
       backdropFilter='blur(50px)'>
-          {/* <ModalHeader style={{color: "white"}}>Why freelance</ModalHeader> */}
           <ModalCloseButton style={{backgroundColor: "white", borderRadius: "20px"}} />
           <ModalBody>
             <div style={{color: "white", marginTop: "40px", fontSize: "18px", fontWeight: 700}}>
            HAKKINDA
-            </div>
-          </ModalBody>
-          <ModalFooter>
-            <img className={styles.modal_logo} src={logo}/>
-          </ModalFooter>
-        </ModalContent>
-      </Modal>
-      <Modal onClose={onHelpClose} isOpen={isHelpOpen} isCentered>
-        <ModalOverlay       bg='blackAlpha.300'
-      backdropFilter='blur(10px) ' />
-        <ModalContent  bg='blackAlpha.200' style={{border: "1px solid white", borderRadius: "15px"}}
-      backdropFilter='blur(50px)'>
-          {/* <ModalHeader style={{color: "white"}}>Why freelance</ModalHeader> */}
-          <ModalCloseButton style={{backgroundColor: "white", borderRadius: "20px"}} />
-          <ModalBody>
-            <div style={{color: "white", marginTop: "40px", fontSize: "18px", fontWeight: 700}}>
-           YARDIM
             </div>
           </ModalBody>
           <ModalFooter>
