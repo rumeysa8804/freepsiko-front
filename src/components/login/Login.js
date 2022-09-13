@@ -5,15 +5,20 @@ import { Input } from "@chakra-ui/react";
 import { useNavigate } from "react-router-dom";
 import login_bg from "../../img/login_bg.svg";
 import styles from "../login/login.module.css";
+import React, { useState } from "react";
 let bgStyle = {
   backgroundImage: login_bg,
 };
-export function Login() {
+export function Login(props) {
+  let [isLogin, login] = useState(false);
   let navigate = useNavigate(); 
-  const routeChange = () =>{ 
+  const routeChange = () =>{
+    login(isLogin = true);
+    props.veriTasi(isLogin);
     let path = '/profile'; 
     navigate(path);
   }
+  
   return (
     <>
       <div className={styles.login_container}>

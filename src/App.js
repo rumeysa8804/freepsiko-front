@@ -12,14 +12,17 @@ import { Jobs } from "./components/job/job";
 import style from "./main.css"
 import { Explore } from "./components/explore/explore.js";
 import { Footer } from "./components/footer/footer.js";
+import React, { useState,useEffect } from "react";
 export function App() {
+  const [isLogin, login] = useState();
+  //console.log(isLogin);
     return (
       <BrowserRouter>
           <ChakraProvider theme={theme}>
-      <Navbar/>
+      <Navbar isLogin = {isLogin}/>
       <Routes>
         <Route  exact path="/" element={<Home/>} />
-        <Route  exact path="/login" element={<Login/>} />
+        <Route  exact path="/login" element={<Login veriTasi={(veri) => {login(veri);}}/>} />
         <Route  exact path="/profile" element={<Profile/>} />
         <Route  exact path="/account" element={<Account/>} />
         <Route  exact path="/security" element={<Security/>} />
