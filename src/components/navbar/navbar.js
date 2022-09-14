@@ -17,10 +17,18 @@ import {
   ModalBody,
   ModalCloseButton,
 } from '@chakra-ui/react'
-function NavScrollExample() {
+function NavScrollExample(props) {
+  const login = () =>{
+    if(props.isLogin){
+      return <img src="https://i0.wp.com/post.healthline.com/wp-content/uploads/2021/02/Female_Portrait_1296x728-header-1296x729.jpg?w=1155&h=2268" className={styles.profile_img}/>
+    }
+    return <button variant="" className={`${styles.navbar_button} rounded`}>
+    GİRİŞ
+    </button>
+
+  }
   const { isOpen: isAboutOpen, onOpen: onAboutOpen, onClose: onAboutClose } = useDisclosure()
   const { isOpen: isHelpOpen, onOpen: onHelpOpen, onClose: onHelpClose } = useDisclosure()
-  
   return (
     <>
     <Navbar className={styles.navbar_container} expand="lg" style={{position:"fixed",width:"100%",backdropFilter: "blur(2px)"}}>
@@ -53,9 +61,7 @@ function NavScrollExample() {
             <div className={`${styles.navbar_navlink}`}>Yardım</div>
           </Link>
           <Link className={styles.navbar_link} to="/login">
-            <button variant="" className={`${styles.navbar_button} rounded`}>
-            GİRİŞ
-            </button>
+            {login()}
           </Link>
         </Navbar.Collapse>
       </Container>

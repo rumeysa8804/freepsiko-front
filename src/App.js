@@ -14,15 +14,18 @@ import { Help } from "./components/help/help.js";
 import style from "./main.css"
 import { Explore } from "./components/explore/explore.js";
 import { Footer } from "./components/footer/footer.js";
+import React, { useState,useEffect } from "react";
 import { ForgotPassword } from "./components/forgotPassword/forgotPassword.js";
 export function App() {
+  const [isLogin, login] = useState();
+  //console.log(isLogin);
     return (
       <BrowserRouter>
           <ChakraProvider theme={theme}>
-      <Navbar/>
+      <Navbar isLogin = {isLogin}/>
       <Routes>
         <Route  exact path="/" element={<Home/>} />
-        <Route  exact path="/login" element={<Login/>} />
+        <Route  exact path="/login" element={<Login veriTasi={(veri) => {login(veri);}}/>} />
         <Route  exact path="/register" element={<Register/>} />
         <Route  exact path="/forgot-password" element={<ForgotPassword/>} />
         <Route  exact path="/profile" element={<Profile/>} />

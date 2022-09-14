@@ -28,6 +28,12 @@
 .navbar_logo_img{
   width: 50px;
 }
+.profile_img{
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  object-fit: cover;
+}
 .modal_logo{
   width: 40px;
 }
