@@ -127,7 +127,6 @@
   width: 100%;
   background-color: #e23072;
   border: 0;
-  text-transform: uppercase;
   padding: 7px 0;
   border-radius: 10px;
   font-size: 14px;
@@ -145,7 +144,7 @@
   font-weight: 100;
   text-align: center;
   font-size: 14px;
-  margin-top: 5px;
+  margin-top: 15px;
 }
 @media only screen and (max-width: 576px) {
   .form_container_2 {
