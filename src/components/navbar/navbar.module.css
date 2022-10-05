@@ -18,6 +18,7 @@
 }
 .navbar_link{
   text-decoration: none;
+  cursor:pointer;
 }
 .navbar_navlink {
   font-family: "Roboto", sans-serif;
