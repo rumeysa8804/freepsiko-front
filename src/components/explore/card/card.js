@@ -13,6 +13,8 @@ export function Job_card() {
         <Card.Body>
           <Card.Text className={styles.card_text}>
             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
           </Card.Text>
           <div className={styles.card_footer_container}>
           <div className={styles.card_footer_left}>BGO TEAM</div>

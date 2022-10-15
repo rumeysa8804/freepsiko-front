@@ -189,10 +189,12 @@ export function Account() {
             <div className={styles.modal_text}>
             <Card  className={styles.card_container}>
                     <Card.Body>
-                        <Container>
+                        <Container >
                           <Row >
                             <Col sm={3} >Web Site</Col>
-                            <Col sm={6} >Lorem ipsum dolor sit amet,consetetur</Col>
+                            <Col sm={6} className={styles.text}>Lorem ipsum dolor sit amet,consetetur
+                            Lorem ipsum dolor sit amet,consetetur
+                            Lorem ipsum dolor sit amet,consetetur</Col>
                             <Col sm={3} style={{color:"#ec3b83"}}>More</Col>
                           </Row>
                         </Container>
@@ -203,7 +205,7 @@ export function Account() {
                         <Container>
                           <Row >
                             <Col sm={3} >Mobile App</Col>
-                            <Col sm={6} >Lorem ipsum dolor sit amet,consetetur</Col>
+                            <Col sm={6} className={styles.text} >Lorem ipsum dolor sit amet,consetetur</Col>
                             <Col sm={3} style={{color:"#ec3b83"}}>More</Col>
                           </Row>
                         </Container>
@@ -214,7 +216,7 @@ export function Account() {
                         <Container>
                           <Row >
                             <Col sm={3} >Graphic</Col>
-                            <Col sm={6} >Lorem ipsum dolor sit amet,consetetur</Col>
+                            <Col sm={6} className={styles.text}>Lorem ipsum dolor sit amet,consetetur</Col>
                             <Col sm={3} style={{color:"#ec3b83"}}>More</Col>
                           </Row>
                         </Container>
