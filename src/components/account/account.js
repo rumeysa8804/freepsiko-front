@@ -6,8 +6,8 @@ import ProgressBar from 'react-bootstrap/ProgressBar';
 import { Menu } from "../menu/menu";
 import { Contact } from "../contact/contact";
 import user from "../../img/account_user.svg";
-import register from "../../img/account_registered.svg";
 import works from "../../img/account_works.svg";
+import { BsClockFill } from "react-icons/bs";
 import { useDisclosure } from '@chakra-ui/react'
 import { Input} from '@chakra-ui/react'
 import {
@@ -24,6 +24,7 @@ export function Account() {
     const { isOpen: isRegistersOpen, onOpen: onRegistersOpen, onClose: onRegistersClose } = useDisclosure()
     const { isOpen: isWorksOpen, onOpen: onWorksOpen, onClose: onWorksClose } = useDisclosure()
     const { isOpen: isOfferOpen, onOpen: onOfferOpen, onClose: onOfferClose } = useDisclosure()
+    const { isOpen: isPersonalUpdateOpen, onOpen: onPersonalUpdateOpen, onClose: onPersonalUpdateClose } = useDisclosure()
     document.body.style.backgroundColor = "#e2e2e2";
   return (
     <>
@@ -49,10 +50,10 @@ export function Account() {
             <Col style={{marginTop: "46px"}} sm={6} lg={3} className={styles.col}>
             <div className={styles.card_container_div}>
             <Card className={styles.info_card} style={{borderRadius:"20px",alignItems: "center",height:"200px"}} onClick={onRegistersOpen}>
-                <img src={register} className={styles.img} />
+            <BsClockFill style={{fontSize:"2.5rem",marginTop:"40px"}}/>
                 <div className={styles.card_body}>
-                    <div style={{fontSize: "20px",textAlign: "center"}}>Kayıtlı</div>
-                    <div style={{fontSize: "16px",textAlign: "center"}}>14 August</div>
+                    <div style={{fontSize: "20px",textAlign: "center"}}>Eski Çalışmalarım</div>
+                    <div style={{fontSize: "16px",textAlign: "center"}}>2 Adet</div>
                 </div>
             </Card>  
             </div>
@@ -91,18 +92,38 @@ export function Account() {
             <div style={{ fontSize: "24px", fontWeight: 400,marginTop:"20px",marginBottom:"30px",textAlign:"center"}}>
             Kişisel Bilgiler
             </div>
-                <Input type='text' placeholder="Username" />
-                <Input type='text' placeholder="+90(123)1231231234" />
-                <Input type='email' placeholder="free@gmail.com" />
-                <Input type='password' placeholder="*****" />
-            <button className={styles.modal_button}>Güncelle</button>
+                <Input type='text'  value="Lena"/>
+                <Input type='text' value="+90(123)1231231234" />
+                <Input type='email' value="free@gmail.com" />
+                <Input type='password' value="12345678" />
+            <button className={styles.modal_button} onClick={onPersonalUpdateOpen}>Bilgilerimi Güncelle</button>
+          </ModalBody>
+          <ModalFooter>
+          </ModalFooter>
+        </ModalContent>
+      </Modal>
+      <Modal onClose={onPersonalUpdateClose} isOpen={isPersonalUpdateOpen} isCentered>
+      <ModalOverlay       bg='blackAlpha.300'
+      backdropFilter='blur(10px) ' />
+        <ModalContent  bg='blackAlpha.200' style={{ borderRadius: "15px"}}
+      backdropFilter='blur(50px)'>
+          <ModalCloseButton style={{backgroundColor: "white", borderRadius: "20px"}} />
+          <ModalBody>
+            <div style={{ fontSize: "24px", fontWeight: 400,marginTop:"20px",marginBottom:"30px",textAlign:"center"}}>
+            Kişisel Bilgiler
+            </div>
+                <Input type='text' placeholder="Username"/>
+                <Input type='text' placeholder="Phone" />
+                <Input type='email' placeholder="Mail" />
+                <Input type='password' placeholder="Password" />
+            <button className={styles.modal_button}>Kaydet</button>
           </ModalBody>
           <ModalFooter>
           </ModalFooter>
         </ModalContent>
       </Modal>
 
-      <Modal onClose={onRegistersClose} isOpen={isRegistersOpen} isCentered size="xxl" m={4}>
+      <Modal onClose={onRegistersClose} isOpen={isRegistersOpen} isCentered size="xl" m={4}>
         <ModalOverlay       bg='blackAlpha.300'
       backdropFilter='blur(10px) ' />
         <ModalContent  bg='blackAlpha.200' style={{ borderRadius: "15px"}}
@@ -110,7 +131,7 @@ export function Account() {
           <ModalCloseButton style={{backgroundColor: "white", borderRadius: "20px"}} />
           <ModalBody>
             <div style={{ fontSize: "24px", fontWeight: 400,marginTop:"20px",marginBottom:"30px"}}>
-            Kaydedilenler
+            Eski Çalışmalarım
             </div>
             <div className={styles.modal_text}>
               <Container style={{float:"left",left:"0"}}>
@@ -150,6 +171,40 @@ export function Account() {
                   </Card>
                 </Col>
                 <Col>
+                <Card  className={styles.card_container}>
+                   <Card.Header className={styles.card_header_container}>
+                    <div className={styles.card_header_left}>Jobs</div>
+                    <div className={styles.card_header_right}>14 August</div>
+                  </Card.Header>
+                <Card.Body>
+                  <Card.Text className={styles.card_text}>
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                  </Card.Text>
+                    <div className={styles.card_footer_container}>
+                    <div className={styles.card_footer_left}>BGO TEAM</div>
+                    <div className={styles.card_footer_rigth}>Full Time</div>
+                    </div>
+                </Card.Body>
+              </Card>
+                </Col>
+                <Col>
+                <Card  className={styles.card_container}>
+                   <Card.Header className={styles.card_header_container}>
+                    <div className={styles.card_header_left}>Jobs</div>
+                    <div className={styles.card_header_right}>14 August</div>
+                  </Card.Header>
+                <Card.Body>
+                  <Card.Text className={styles.card_text}>
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                  </Card.Text>
+                    <div className={styles.card_footer_container}>
+                    <div className={styles.card_footer_left}>BGO TEAM</div>
+                    <div className={styles.card_footer_rigth}>Full Time</div>
+                    </div>
+                </Card.Body>
+              </Card>
+                </Col>
+                                <Col>
                 <Card  className={styles.card_container}>
                    <Card.Header className={styles.card_header_container}>
                     <div className={styles.card_header_left}>Jobs</div>

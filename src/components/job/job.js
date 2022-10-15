@@ -36,10 +36,10 @@ class Job extends React.Component{
     <Tab.Container id="list-group-tabs-example" defaultActiveKey="#normal">
         <ListGroup className={styles.menu_items_container}>
           <div style={{display: "flex", margin: "auto", marginTop: "50px"}} >
-          <ListGroup.Item style={{ backgroundColor: "#000", borderRadius: 30, marginRight: 5  }} className={styles.menu_item} action href="#normal" onClick={e=>this.setJob("normal")}>
+          <ListGroup.Item variant="dark" style={{ borderRadius: 30, marginRight: 5  }} className={styles.menu_item} action href="#normal" onClick={e=>this.setJob("normal")}>
             Normal
           </ListGroup.Item>
-          <ListGroup.Item style={{ backgroundColor: "#000", borderRadius: 30, marginLeft: 5  }} className={styles.menu_item} action href="#premium" onClick={e=>this.setJob("premium")}>
+          <ListGroup.Item variant="dark" style={{ borderRadius: 30, marginLeft: 5  }} className={styles.menu_item} action href="#premium" onClick={e=>this.setJob("premium")}>
             Premium
           </ListGroup.Item>
           </div>

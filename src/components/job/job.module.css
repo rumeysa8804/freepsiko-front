@@ -24,32 +24,33 @@
   -webkit-filter: blur(30px);
 }
 .menu_items_container{
-  
   display: flex;
   margin-bottom: 40px;
 }
+
 .menu_item{
   display: inline-block;
-  /* width: 100px; */
-  color: white;
-  /* width: 150px; */
+  background-color: #fff;
   text-align: center;
-  /* padding: 10px; */
   border-radius: 15px;
-  border: 0;
+  border-color: #000;
+  border-top-width: 1px !important;
+  border: 1px solid;
   padding: 10px 50px;
-
 }
+.menu_item:hover {
+  background-color: #000 !important;
+  color:#fff !important;
+}
+
 .job_container {
-  width: 50%;
+  width: 40%;
   margin: auto;
 }
 .job_dropdown_button {
-  /* margin-top: 40px; */
 margin-bottom:10px;
   width: 100%;
   border: 0;
-  /* font-size: 15px; */
   padding: 10px;
   background-color: #f2f2f2;
   border-radius: 15px;
@@ -62,7 +63,7 @@ margin-bottom:10px;
   margin-top: 10px;
 }
 .job_input_group {
-  width: 47%;
+  width: 49%;
 }
 .job_input {
   font-family: "Roboto", sans-serif;
@@ -107,18 +108,7 @@ cursor: pointer;
   width: 100%;
   margin-top: 10px;
 }
-.job_send_premium_button{
-  width: 100%;
-  margin: auto;
-  background-color: #4c8ceb;
-  margin-top: 15px;
-  border-radius: 15px;
-  font-family: "Roboto", sans-serif;
-cursor: pointer;
-  padding: 18px;
-  text-align: center;
-  color: white;
-}
+
 .job_pay_button {
   float:right;
   width: 40%;
@@ -135,11 +125,12 @@ cursor: pointer;
 .modal_text {
   margin-top:20px;
 }
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 800px) {
   .job_container {
     width: 80%;
   }
   .job_input_container {
+    flex-direction: column;
   }
   .job_input_group {
     width: 100%;
@@ -151,10 +142,7 @@ cursor: pointer;
   .job_send_button {
     width: 100%;
   }
-  .job_dropdown_button {
-    width: 120%;
-    margin-left:-20px;
-  }
+
   .job_input_premium_group_cvc{
     width: 50%;
     margin-top: 10px;
@@ -176,7 +164,7 @@ cursor: pointer;
   .menu_item{
     display: inline-block;
     width: 100%;
-    color: white;
+    /* color: white; */
     /* width: 150px; */
     padding: 10px 30px;
   }

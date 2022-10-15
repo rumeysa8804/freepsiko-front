@@ -28,7 +28,6 @@ function NavScrollExample(props) {
 
   }
   const { isOpen: isAboutOpen, onOpen: onAboutOpen, onClose: onAboutClose } = useDisclosure()
-  const { isOpen: isHelpOpen, onOpen: onHelpOpen, onClose: onHelpClose } = useDisclosure()
   return (
     <>
     <Navbar className={styles.navbar_container} expand="lg" style={{position:"fixed",width:"100%",backdropFilter: "blur(2px)"}}>
@@ -54,9 +53,9 @@ function NavScrollExample(props) {
           <Link className={styles.navbar_link} to="/jobs">
             <div className={`${styles.navbar_navlink}`}>Çalışan Ol</div>
           </Link>
-          <Link className={styles.navbar_link} to="/">
+          <div className={styles.navbar_link} onClick={onAboutOpen}>
             <div className={`${styles.navbar_navlink}`} onClick={onAboutOpen}>Hakkında</div>
-          </Link>
+          </div>
           <Link className={styles.navbar_link} to="/help">
             <div className={`${styles.navbar_navlink}`}>Yardım</div>
           </Link>

@@ -3,6 +3,7 @@ import Card from 'react-bootstrap/Card';
 import styles from "../pink/pink.module.css"
 import Col from "react-bootstrap/Col";
 import logo from "../../img/logo.svg";
+import { useNavigate } from "react-router-dom";
 import { useDisclosure } from '@chakra-ui/react'
 import {
   Modal,
@@ -15,6 +16,11 @@ import {
 } from '@chakra-ui/react'
 export function Pink() {
   const { isOpen, onOpen, onClose } = useDisclosure()
+  let navigate = useNavigate(); 
+  const routeChange = () =>{ 
+    let path = '/jobs#normal'; 
+    navigate(path);
+  }
   return (
     <Card className={`text-center ${styles.pink_card}`}>
       <Card.Body>
@@ -43,7 +49,7 @@ eirmod tempor invidunt ut labore et.
 
           Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
             </div>
-            <button className={styles.modal_button} onClick={onClose}>Çalışan Ol!</button>
+            <button className={styles.modal_button} onClick={routeChange}>Çalışan Ol!</button>
           </ModalBody>
           <ModalFooter>
             <img className={styles.modal_logo} src={logo}/>

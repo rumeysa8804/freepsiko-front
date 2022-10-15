@@ -77,7 +77,7 @@ export function Job_Premium() {
               aria-describedby="basic-addon1"
             />
           </InputGroup>
-          <div className={styles.job_send_premium_button} onClick={() => {
+          <div className={styles.job_send_button} onClick={() => {
           setOverlay(<OverlayOne />)
           onOpen()
         }}>Gönder</div>
@@ -195,12 +195,7 @@ export function Job_Premium() {
               </Col>
             </Row>
           </Container>
-            
-
-      
-
           </ModalBody>
-
         </ModalContent>
       </Modal>
     </>
