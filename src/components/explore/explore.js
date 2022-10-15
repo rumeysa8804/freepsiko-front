@@ -4,7 +4,7 @@ export function Explore() {
   return (
     <>
       <div className={styles.orange_container}>
-        <div className={styles.orange_container_title}>TAMAMLANAN çalışmalar</div>
+        <div className={styles.orange_container_title}>TAMAMLANAN ÇALIŞMALAR</div>
         <div className={styles.orange_container_text}>
         Tarafımızca yapılan, tamamlanan çalışmaların bazılarını burada 
 görebilirsiniz. Yapılan çalışmaları görmek için tıklayınız
